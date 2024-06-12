@@ -3,8 +3,8 @@ from zoo_manager import Animal, Mammal, Bird, Reptile, Primate, Marsupial, Aviar
 
 def test_animal():
     animal = Animal("Lion", "Felis leo")
-    assert animal.name == "Lion"
-    assert animal.species == "Felis leo"
+    assert animal._name == "Lion"
+    assert animal._species == "Felis leo"
     assert animal.speak() == "Animal sound"
 
 
@@ -15,7 +15,7 @@ def test_mammal():
 
 def test_bird():
     bird = Bird("Eagle", "Aquila chrysaetos", wingspan=2.5)
-    assert bird.wingspan == 2.5
+    assert bird._wingspan == 2.5
 
 
 def test_reptile():
@@ -35,9 +35,9 @@ def test_marsupial():
 
 def test_aviary():
     aviary = Aviary()
-    assert isinstance(aviary.birds, list)
+    assert isinstance(aviary._birds, list)
 
 
 def test_reptile_enclosure():
     reptile_enclosure = ReptileEnclosure()
-    assert isinstance(reptile_enclosure.reptiles, list)
+    assert isinstance(reptile_enclosure._reptiles, list)
