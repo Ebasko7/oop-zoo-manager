@@ -48,5 +48,3 @@ class ReptileEnclosure:
     def __init__(self, reptiles = []):
         self._reptiles = reptiles 
 
-mammal = Mammal("Giraffe", "Giraffa camelopardalis")
-mammal.give_birth()
